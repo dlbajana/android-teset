@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semi_transparent_white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ph.newsim.mobile.newsim.ui.ProfileUpdateActivity"
+    tools:showIn="@layout/activity_profile_update">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/divider">
+
+            <ImageView
+                android:id="@+id/img_profile_cover_photo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#bdc3c7"
+                android:src="@drawable/default_cover_photo"
+                android:scaleType="center"
+                android:adjustViewBounds="false" />
+
+            <ImageView
+                android:id="@+id/img_overlay_cover_photo"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_overlay_camera"
+                android:layout_alignBottom="@id/img_profile_cover_photo"
+                android:layout_alignParentEnd="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_profile_cover_photo"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingStart="16dp"
+                    android:orientation="horizontal"
+                    android:gravity="end">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="104dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/field_first_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="First Name"
+                            android:background="@drawable/edt_bg_selector"
+                            android:maxLines="1"
+                            android:textSize="16sp"/>
+
+                        <EditText
+                            android:id="@+id/field_middle_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Middle Name"
+                            android:background="@drawable/edt_bg_selector"
+                            android:maxLines="1"
+                            android:textSize="16sp"/>
+
+                        <EditText
+                            android:id="@+id/field_last_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Last Name"
+                            android:background="@drawable/edt_bg_selector"
+                            android:maxLines="1"
+                            android:textSize="16sp"/>
+
+                        <EditText
+                            android:id="@+id/field_extn_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Name Extension"
+                            android:background="@drawable/edt_bg_selector"
+                            android:maxLines="1"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="56dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:layout_width="56dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_down"
+                            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_rank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="0.5dp"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text=" Rank"/>
+
+                    <TextView
+                        android:id="@+id/label_rank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="4dp"
+                        android:textSize="16sp"
+                        android:text="Rank"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="0.5dp"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text=" Gender"/>
+
+                    <TextView
+                        android:id="@+id/label_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="4dp"
+                        android:textSize="16sp"
+                        android:text="Gender"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_birth_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="0.5dp"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text=" Birthdate"/>
+
+                    <TextView
+                        android:id="@+id/label_birth_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="4dp"
+                        android:textSize="16sp"
+                        android:text="BirthDate"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_birth_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="0.5dp"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text=" BirthPlace"/>
+
+                    <TextView
+                        android:id="@+id/label_birth_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="4dp"
+                        android:textSize="16sp"
+                        android:text="BirthDate"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="0.5dp"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text=" Address"/>
+
+                    <TextView
+                        android:id="@+id/label_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="4dp"
+                        android:textSize="16sp"
+                        android:text="Address"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="0.5dp"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text=" Company"/>
+
+                    <TextView
+                        android:id="@+id/label_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="4dp"
+                        android:textSize="16sp"
+                        android:text="Company"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_company_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="0.5dp"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text=" Company Contact No."/>
+
+
+
+                    <TextView
+                        android:id="@+id/label_company_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="4dp"
+                        android:textSize="16sp"
+                        android:text="Company Contact No."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_department"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="0.5dp"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text=" Department"/>
+
+                    <TextView
+                        android:id="@+id/label_department"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="4dp"
+                        android:textSize="16sp"
+                        android:text="Department"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="0.5dp"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text=" Mobile No."/>
+
+                    <TextView
+                        android:id="@+id/label_mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="4dp"
+                        android:textSize="16sp"
+                        android:text="Mobile No."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_telephone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="0.5dp"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="Telephone No."/>
+
+                    <TextView
+                        android:id="@+id/label_telephone_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="4dp"
+                        android:textSize="16sp"
+                        android:text="Telephone No."/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="152dp"
+                android:src="@drawable/default_profile_photo"
+                app:layout_anchor="@id/img_profile_cover_photo"
+                app:layout_anchorGravity="bottom|center_horizontal"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@android:color/white"
+                android:layout_alignParentStart="true"/>
+
+            <ImageView
+                android:id="@+id/img_overlay_profile"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_overlay_camera"
+                app:layout_anchor="@id/img_profile_cover_photo"
+                app:layout_anchorGravity="center_vertical|center_horizontal"
+                android:layout_alignTop="@id/profile_image"
+                android:layout_alignStart="@id/profile_image"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

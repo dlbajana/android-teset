@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.CustomCard"
+    android:id="@+id/card_view_normal_passive"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_post_image_1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius_bottom_left="0dp"
+            app:riv_corner_radius_bottom_right="0dp"
+            app:riv_corner_radius_top_left="@dimen/card_corner_radius"
+            app:riv_corner_radius_top_right="@dimen/card_corner_radius"
+            android:adjustViewBounds="false" />
+
+        <TextView
+            android:id="@+id/label_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:text="Extended No Action"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/label_post_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="Newsim Cebu • 3 hours ago"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/label_post_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:text="@string/sample_description"
+            android:textColor="@color/black_semi_transparent" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ph.newsim.mobile.newsim.fragments.IndexFragment">
+
+    <ImageView
+        android:id="@+id/img_index_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        android:src="@drawable/cover_nta"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img_company_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"/>
+
+        <Button
+            android:id="@+id/button_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/background_facebook_button"
+            android:text="log in with Facebook"
+            android:textColor="@color/white"
+            android:layout_above="@+id/button_google_plus" />
+
+        <Button
+            android:id="@+id/button_google_plus"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_google_plus_button"
+            android:text="log in with google+"
+            android:textColor="@color/white"
+            android:layout_above="@+id/button_sign_up"/>
+
+        <Button
+            android:id="@+id/button_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:text="sign up for an account"
+            android:textColor="@color/black_semi_transparent"
+            android:background="@drawable/background_email_button"
+            android:layout_above="@+id/link_sign_in" />
+
+        <TextView
+            android:id="@+id/link_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Have an account? SIGN IN"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

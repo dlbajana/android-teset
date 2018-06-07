@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Newsim</string>
+
+    <string name="facebook_app_id">865515070247536</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="sample_description">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese the big cheese.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_notification">Notification</string>
+    <string name="action_search">Search</string>
+    <string name="action_update_profile">Edit Profile</string>
+    <string name="action_places">Places</string>
+    <string name="title_activity_post">Post</string>
+    <string name="title_activity_places">Places</string>
+    <string name="title_activity_profile"></string>
+    <string name="title_activity_login_index">LoginIndexActivity</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="register_full_name">Full Name: %s</string>
+    <string name="register_email">Email: %s</string>
+    <string name="title_activity_profile_update">Edit profile</string>
+    <string name="title_activity_schedule">ScheduleActivity</string>
+    <string name="title_activity_reservation">Online Reservation</string>
+    <string name="search_course_hint">Search course</string>
+    <string name="title_activity_settings">Account Settings</string>
+    <string name="title_activity_courses_offered">Courses</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ec1c24</color>
+    <color name="colorPrimaryDark">#b71c1c</color>
+    <color name="colorPrimaryLight">#f44336</color>
+    <color name="colorAccent">#483265</color>
+    <color name="colorAccentDark">#3e2b58</color>
+    <color name="colorAccentLight">#5c4081</color>
+
+
+    <color name="bluePrimary">#2196F3</color>
+    <color name="bluePrimaryDark">#1976D2</color>
+    <color name="blueAccent">#ffbebebe</color>
+
+
+    <color name="greyPrimary">#607D8B</color>
+    <color name="greyPrimaryDark">#455A64</color>
+    <color name="greyAccent">#ec1c24</color>
+
+
+    <color name="deepOrangePrimary">#FF5722</color>
+    <color name="deepOrangePrimaryDark">#E64A19</color>
+    <color name="deepOrangeAccent">#2e7d32</color>
+
+
+    <color name="black">#c8000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="semi_transparent_white">#7fffffff</color>
+    <color name="semi_transparent_white_2">#cacaca</color>
+    <color name="layout_background">#e0e0e0</color>
+    <color name="layout_background_2">#ebebeb</color>
+    <color name="grey">#757575</color>
+    <color name="divider">#1E000000</color>
+    <color name="secondary_text">#76000000</color>
+
+    <color name="rowTitle">#c93e2b58</color>
+    <color name="rowSubheader">#616161</color>
+    <color name="black_semi_transparent">#c9000000</color>
+
+    <color name="facebook_primary_color">#3b5998</color>
+    <color name="google_plus_primary_color">#f44336</color>
+    <color name="login_button_color">#EE756F</color>
+    <color name="login_button_color_pressed">#fd584f</color>
+    <color name="green">#4CAF50</color>
+    <color name="darkgreen">#2e7d32</color>
+
+</resources>

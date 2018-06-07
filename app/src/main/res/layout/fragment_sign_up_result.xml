@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect"
+        android:orientation="vertical"
+        android:paddingEnd="16dp"
+        android:paddingStart="32dp"
+        android:paddingTop="32dp">
+
+        <TextView
+            android:id="@+id/register_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your account has been successfully created!"
+            android:textAppearance="@style/TextRobotoLight"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/label_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="36dp"
+            android:text="@string/register_email"/>
+
+        <TextView
+            android:id="@+id/label_user_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_text_email"
+            android:text="@string/register_full_name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Update your account info HERE"/>
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/button_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="36dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:cpb_colorIndicator="@color/login_button_color"
+            app:cpb_colorProgress="#f1f1f1"
+            app:cpb_cornerRadius="2dp"
+            app:cpb_selectorComplete="@drawable/selector_sign_in_button_success"
+            app:cpb_selectorError="@drawable/selector_sign_in_button"
+            app:cpb_selectorIdle="@drawable/selector_sign_in_button"
+            app:cpb_textComplete="Sign In Successful!"
+            app:cpb_textError="Retry"
+            app:cpb_textIdle="  Continue with this Account  "/>
+
+        <TextView
+            android:id="@+id/register_text_other_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Sign in using different Account"/>
+
+        <TextView
+            android:id="@+id/link_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:text="SIGN IN"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+
+
+

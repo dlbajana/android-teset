@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_branch_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/sample_profile_photo"
+            android:fitsSystemWindows="true"
+            app:civ_border_color="@color/layout_background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/label_branch_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="14sp"
+                android:text="Newsim Makati"/>
+
+            <TextView
+                android:id="@+id/label_post_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="6 hours ago"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/label_post_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:ellipsize="end"
+        android:text="Enroll now at Newsim Makati!"
+        android:textSize="18dp"
+        android:textAppearance="@style/TextRobotoLight"
+        android:textStyle="bold"
+        android:textColor="@color/black_semi_transparent" />
+
+    <ImageView
+        android:id="@+id/img_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/cover_nta"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/label_post_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:ellipsize="end"
+        android:text="@string/sample_description"
+        android:textColor="@color/black_semi_transparent"/>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Blue application Theme. -->
+    <style name="AppThemeBlue" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bluePrimary</item>
+        <item name="colorPrimaryDark">@color/bluePrimaryDark</item>
+        <item name="colorAccent">@color/blueAccent</item>
+    </style>
+
+    <style name="AppThemeBlue.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeBlue.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppThemeBlue.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Grey application Theme. -->
+    <style name="AppThemeGrey" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/greyPrimary</item>
+        <item name="colorPrimaryDark">@color/greyPrimaryDark</item>
+        <item name="colorAccent">@color/greyAccent</item>
+    </style>
+
+    <style name="AppThemeGrey.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeGrey.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppThemeGrey.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Grey application Theme. -->
+    <style name="AppThemeDeepOrange" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/deepOrangePrimary</item>
+        <item name="colorPrimaryDark">@color/deepOrangePrimaryDark</item>
+        <item name="colorAccent">@color/deepOrangeAccent</item>
+    </style>
+
+    <style name="AppThemeDeepOrange.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeDeepOrange.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppThemeDeepOrange.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <style name="Widget.CustomCard" parent="android:Widget">
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="TextRobotoLight" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="TextRobotoNormal" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="ButtonGetDirection" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/google_plus_primary_color</item>
+    </style>
+
+</resources>

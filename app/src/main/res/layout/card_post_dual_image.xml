@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.CustomCard"
+    android:id="@+id/card_grid_dual_passive"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rect"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_branch_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/sample_profile_photo"
+                android:fitsSystemWindows="true"
+                app:civ_border_color="@color/layout_background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/label_post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="14sp"
+                    android:text="Enroll Now at Newsim Makati!"/>
+
+                <TextView
+                    android:id="@+id/label_post_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Newsim Makati • 6 hours ago"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_post_image_1"
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="1dp"/>
+
+            <ImageView
+                android:id="@+id/img_post_image_2"
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="1dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/label_post_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="24dp"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:text="@string/sample_description"
+            android:textColor="@color/black_semi_transparent" />
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.v7.widget.CardView>

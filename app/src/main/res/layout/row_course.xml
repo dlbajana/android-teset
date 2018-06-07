@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp"
+    android:padding="12dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_course_thumbnail"
+        android:layout_width="61dp"
+        android:layout_height="61dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/label_course_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="RPSCRB"
+            android:maxLines="1"
+            android:textColor="@color/rowTitle"/>
+
+        <TextView
+            android:id="@+id/label_course_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:textColor="@color/secondary_text"
+            android:text="8 DAYS"/>
+
+        <TextView
+            android:id="@+id/label_course_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:textColor="@color/secondary_text"
+            android:text="REFRESHER TRAINING ON PROFICIENCY IN SURVIVAL CRAFT AND RESCUE BOATS OTHER THAN FAST RESCUE BOATS"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="ph.newsim.mobile.newsim">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:name=".util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.PostActivity"
+            android:label="@string/title_activity_post"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ph.newsim.mobile.newsim.ui.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.PlacesActivity"
+            android:label="@string/title_activity_places"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ph.newsim.mobile.newsim.ui.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ph.newsim.mobile.newsim.ui.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.LoginIndexActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.SignInActivity"
+            android:label="@string/title_activity_sign_in"
+            android:parentActivityName=".ui.LoginIndexActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ph.newsim.mobile.newsim.ui.LoginIndexActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName=".ui.LoginIndexActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ph.newsim.mobile.newsim.ui.LoginIndexActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.ProfileUpdateActivity"
+            android:label="@string/title_activity_profile_update"
+            android:parentActivityName=".ui.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ph.newsim.mobile.newsim.ui.ProfileActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.ScheduleActivity"
+            android:label="@string/title_activity_schedule"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppThemeBlue.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ph.newsim.mobile.newsim.ui.MainActivity"/>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/schedule_search_config"/>
+        </activity>
+        <activity
+            android:name=".ui.ReservationActivity"
+            android:label="@string/title_activity_reservation"
+            android:parentActivityName=".ui.ScheduleActivity"
+            android:theme="@style/AppThemeBlue.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ph.newsim.mobile.newsim.ui.ScheduleActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppThemeGrey.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ph.newsim.mobile.newsim.ui.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.CoursesOfferedActivity"
+            android:label="@string/title_activity_courses_offered"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppThemeDeepOrange.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ph.newsim.mobile.newsim.ui.MainActivity"/>
+        </activity>
+    </application>
+
+</manifest>
